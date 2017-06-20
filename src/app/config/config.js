@@ -4,7 +4,9 @@ const envConfig = {
   production: {}
 };
 
-const defaultConfig = {};
+const defaultConfig = {
+  facebookAppId: process.env.FACEBOOK_APP_ID
+};
 
 const config = Object.assign({}, defaultConfig, envConfig[environment]);
 

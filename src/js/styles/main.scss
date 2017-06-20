@@ -3,3 +3,29 @@
 
 // reset the styles
 @import 'base/reset';
+
+// import the blocks of styles
+@import 'blocks/loading';
+@import 'blocks/card';
+@import 'blocks/button';
+
+body {
+  font-family: 'Helvetica';
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.container {
+  width: 100%;
+  padding: 25px 50px;
+  box-sizing: border-box;
+}
+
+.vertical-center-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

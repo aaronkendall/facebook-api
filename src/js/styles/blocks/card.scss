@@ -1,0 +1,23 @@
+.card {
+  width: 17vw;
+  min-width: 200px;
+  height: 100%;
+  margin: 40px;
+  cursor: pointer;
+}
+
+.card:hover {
+  opacity: 0.6;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-container {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

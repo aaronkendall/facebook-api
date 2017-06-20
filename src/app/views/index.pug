@@ -2,7 +2,10 @@ doctype html
 html
   head
     title= title
+    script(src="js/styles.js")
   body
     section#facebook-root--js
-      
+    script.
+      window._app = { facebookAppId: #{appId} }
+  
 script(src="/js/index.js")
