@@ -1,12 +1,7 @@
-import ctrls from './ctrl/index';
+import ReactDOM from 'react-dom';
+import React from 'react';
 
-const app = window.app = {};
-app.controllers = {};
-app.config = {
-  name: 'Boilerplate Site'
-};
+import Wrapper from './components/Wrapper.jsx';
 
-ctrls.forEach((ctrl) => {
-  app.controllers[ctrl.name] = ctrl;
-  app.controllers[ctrl.name](app);
-});
+const rootElement = document.querySelector('#facebook-root--js');
+ReactDOM.render(<Wrapper />, rootElement);

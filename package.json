@@ -1,13 +1,13 @@
 {
-  "name": "boilerplate",
+  "name": "facebook-api",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./src/app/bin/www",
-    "prod": "NODE_ENV=production && npm start",
+    "start": "nodemon ./src/app/bin/www",
+    "prod": "NODE_ENV=production npm start",
     "dev": "NODE_ENV=development nodemon ./src/app/bin/www",
-    "hot": "NODE_ENV=development && webpack",
-    "build": "NODE_ENV=production && webpack"
+    "hot": "NODE_ENV=development webpack",
+    "build": "NODE_ENV=production webpack"
   },
   "dependencies": {
     "body-parser": "1.17.1",
@@ -18,7 +18,9 @@
     "morgan": "1.8.1",
     "pug": "2.0.0-beta11",
     "reqwest": "^2.0.5",
-    "xhr2": "^0.1.4"
+    "xhr2": "^0.1.4",
+    "react": "15.5.4",
+    "react-dom": "15.5.4"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -28,6 +30,8 @@
     "node-sass": "^4.5.2",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.17.0",
-    "webpack": "2.5.0"
+    "webpack": "2.5.0",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-react-hmre": "1.1.1"
   }
 }
