@@ -37,7 +37,7 @@ export default class FacebookClient {
                 return {
                   isAlbumPhoto: true,
                   name: coverPhoto.album.name,
-                  image: coverPhoto.images[0].source,
+                  image: coverPhoto.images[0].source, // Just get the first image for now
                   id: coverPhoto.album.id
                 }
               });
@@ -73,7 +73,7 @@ export default class FacebookClient {
       return {
         isAlbumPhoto: false,
         id: photo.id,
-        image: photo.images[0].source,
+        image: photo.images[0].source, // Just get the first image for now
         name: photo.name
       };
     });
@@ -108,7 +108,6 @@ export default class FacebookClient {
         this.FB = FB;
     }
 
-    // Load the SDK Asynchronously
     (function (d, s, id) {
         var js,
             fjs = d.getElementsByTagName(s)[0],
@@ -116,7 +115,6 @@ export default class FacebookClient {
 
         if (d.getElementById(id)) { return; }
 
-        // Create fb-root div to stop Facebook SDK showing a warning.
         fbRoot = d.createElement('div');
         fbRoot.id = 'fb-root';
         d.body.appendChild(fbRoot);
