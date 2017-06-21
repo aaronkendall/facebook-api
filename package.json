@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./src/app/bin/www",
+    "start": "node ./src/app/bin/www",
     "prod": "NODE_ENV=production npm start",
     "dev": "NODE_ENV=development nodemon ./src/app/bin/www",
     "hot": "NODE_ENV=development webpack",
